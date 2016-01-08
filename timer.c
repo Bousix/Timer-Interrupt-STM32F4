@@ -4,9 +4,6 @@ void TIM2_IRQ_Init(uint32_t period)
 {
   TIM_TimeBaseInitTypeDef timerInitStruct;
   NVIC_InitTypeDef NVIC_InitStructure;
-  RCC_ClocksTypeDef clockFreq;
-  
-  RCC_GetClocksFreq(&clockFreq);
   
   RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE); 
   
